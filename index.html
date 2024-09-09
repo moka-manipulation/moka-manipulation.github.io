@@ -114,19 +114,6 @@
   </div>
 </section>
 
-<!-- <section class="hero teaser"> -->
-<!--   <div class="container is-max-desktop"> -->
-<!--     <div class="hero-body"> -->
-<!--       <img src="images/teaser.gif" -->
-<!--                  class="interpolation-image" -->
-<!--                  alt="Interpolation end reference image."/> -->
-<!--       <h2 class="content has-text-justified"> -->
-<!--         <b>MOKA</b> employs pre-trained vision-language models (GPT-4V) to predict <b>point-based affordance representations</b> for solving manipulation tasks in zero- or few-shot manners. By <b>annotating marks</b> (candidate points, grids, and captions) on RGB images, MOKA converts the motion generation problem into a series of visual question-answering problems that the VLM can address. -->
-<!--       </h2> -->
-<!--     </div> -->
-<!--   </div> -->
-<!-- </section> -->
-
 <section class="hero teaser">
   <div class="container is-fullhd">
     <div class="hero-body">
@@ -146,64 +133,6 @@
   </div>
 </section>
 
-
-<!--<section class="hero is-light is-small">-->
-<!--  <div class="hero-body">-->
-<!--    <div class="container">-->
-<!--      <div id="results-carousel" class="carousel results-carousel">-->
-<!--        <div class="item item-steve">-->
-<!--          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">-->
-<!--            <source src="videos/steve.mp4"-->
-<!--                    type="video/mp4">-->
-<!--          </video>-->
-<!--        </div>-->
-<!--        <div class="item item-chair-tp">-->
-<!--          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">-->
-<!--            <source src="videos/chair-tp.mp4"-->
-<!--                    type="video/mp4">-->
-<!--          </video>-->
-<!--        </div>-->
-<!--        <div class="item item-shiba">-->
-<!--          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">-->
-<!--            <source src="videos/shiba.mp4"-->
-<!--                    type="video/mp4">-->
-<!--          </video>-->
-<!--        </div>-->
-<!--        <div class="item item-fullbody">-->
-<!--          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">-->
-<!--            <source src="videos/fullbody.mp4"-->
-<!--                    type="video/mp4">-->
-<!--          </video>-->
-<!--        </div>-->
-<!--        <div class="item item-blueshirt">-->
-<!--          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">-->
-<!--            <source src="videos/blueshirt.mp4"-->
-<!--                    type="video/mp4">-->
-<!--          </video>-->
-<!--        </div>-->
-<!--        <div class="item item-mask">-->
-<!--          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">-->
-<!--            <source src="videos/mask.mp4"-->
-<!--                    type="video/mp4">-->
-<!--          </video>-->
-<!--        </div>-->
-<!--        <div class="item item-coffee">-->
-<!--          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">-->
-<!--            <source src="videos/coffee.mp4"-->
-<!--                    type="video/mp4">-->
-<!--          </video>-->
-<!--        </div>-->
-<!--        <div class="item item-toby">-->
-<!--          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">-->
-<!--            <source src="videos/toby2.mp4"-->
-<!--                    type="video/mp4">-->
-<!--          </video>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
-
 <hr>
 
 
@@ -217,21 +146,6 @@
           <div class="content has-text-justified">
             <p>
             Open-world generalization requires robotic systems to have a profound understanding of the physical world and the user command to solve diverse and complex tasks. While the recent advancement in vision-language models (VLMs) has offered unprecedented opportunities to solve open-world problems, how to leverage their capabilities to control robots remains a grand challenge. In this paper, we introduce Marking Open-world Keypoint Affordances (MOKA), an approach that employs VLMs to solve robotic manipulation tasks specified by free-form language instructions. Central to our approach is a compact point-based representation of affordance, which bridges the VLM’s predictions on observed images and the robot’s actions in the physical world. By prompting the pre-trained VLM, our approach utilizes the VLM’s commonsense knowledge and concept understanding acquired from broad data sources to predict affordances and generate motions. To facilitate the VLM’s reasoning in zero-shot and few-shot manners, we propose a visual prompting technique that annotates marks on images, converting affordance reasoning into a series of visual question-answering problems that are solvable by the VLM. We further explore methods to enhance performance with robot experiences collected by MOKA through in-context learning and policy distillation. We evaluate and analyze MOKA’s performance on various table-top manipulation tasks including tool use, deformable body manipulation, and object rearrangement.
-            <!--   We present MOKA, an approach that employs VLMs' reasoning capabilities for robotic manipulation in open-vocabulary settings. -->
-            <!--   At the heart of our approach is a compact point-based representation of affordance and motion that bridges -->
-            <!--   the VLM's predictions on RGB images and the robot's motions in the physical world. -->
-            <!-- [> </p> <] -->
-            <!-- [> <p> <] -->
-            <!--   By prompting a VLM pre-trained on internet-scale data, our approach predicts the affordances and generates the corresponding motions -->
-            <!--   by leveraging the concept understanding and commonsense knowledge from broad sources. To scaffold the VLM's reasoning in zero-shot, -->
-            <!--   we propose a visual prompting technique that annotates visual and textual marks on the raw images, converting the prediction -->
-            <!--   of keypoints and waypoints into a visual question answering problem that is feasible for the VLM to solve. -->
-            <!-- [> </p> <] -->
-            <!-- [> <p> <] -->
-            <!--   We evaluate and analyze MOKA's performance across a wide variety of manipulation tasks specified by -->
-            <!--   free-form language descriptions, spanning across tool use, deformable body manipulation, object rearrangement, etc. -->
-            <!--   MOKA can successfully achieve high success rates on all these tasks in zero-shot or few-shot and -->
-            <!--   provide interpretable intermediate results for human users. -->
             </p>
           </div>
         </div>
@@ -244,7 +158,7 @@
     <div class="my-block">
       <!-- <div class="columns is-centered has-text-centered"> -->
         <div class="column is-full-width">
-          <h2 class="title is-3">Marking Open-vocabulary Keypoint Affordances (MOKA)</h2>
+          <h2 class="title is-3">Marking Open-world Keypoint Affordances (MOKA)</h2>
 
           <h2 class="content has-text-justified">
             MOKA employs VLMs in a <b>hierarchical visual prompting</b> framework, which converts the affordance reasoning problem into a series of visual question problems that are feasible for the VLM to address.
