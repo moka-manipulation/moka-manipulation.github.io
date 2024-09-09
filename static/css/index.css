@@ -19,6 +19,10 @@ body {
     margin-bottom: 50px;
 }
 
+.my-block-new {
+    margin-bottom: 0px;
+}
+
 .link-block a {
     margin-top: 5px;
     /* margin-bottom: 5px; */
